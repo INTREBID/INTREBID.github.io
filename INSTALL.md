@@ -53,6 +53,11 @@ You need to take the following steps to get `al-folio` up and running on your lo
 ```bash
 $ docker compose pull
 $ docker compose up
+
+# if wrong, 进入容器内，安装缺失的文件
+docker exec -it <container ID> /bin/bash
+gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
+gem install terser
 ```
 
 Note that when you run it for the first time, it will download a docker image of size 400MB or so. To see the template running, open your browser and go to `http://localhost:8080`. You should see a copy of the theme's demo website.

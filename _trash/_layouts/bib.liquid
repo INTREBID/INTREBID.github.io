@@ -1,7 +1,6 @@
 ---
 ---
 <div class="row">
-  {% comment %}
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
@@ -41,28 +40,6 @@
             alt=entry.preview
           %}
         {% endif %}
-      {% endif %}
-    </div>
-  {% endif %}
-  {% endcomment %}
-
-  <!-- add new pdf bib code -->
-  {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-2 abbr">
-      <abbr class="badge rounded w-100">
-        {% if entry.pdf %}
-            <a href="/assets/pdf/{{ entry.pdf }}" class="small-btn" role="button" target="_blank" style="font-size:12px;">pdf</a>
-        {% else %}
-            <a href="#" onclick="return false;">pdf</a>
-        {% endif %}
-      </abbr>
-      <abbr class="badge rounded w-100">
-        <a href="#" class="small-btn" role="button" style="font-size:12px;" onclick="event.preventDefault();copyToClipboard(`{{ entry.bibtex }};`)">bib</a>
-      </abbr>
-      {% if entry.code %}
-        <abbr class="badge rounded w-100">
-          <a href="{{ entry.code }}" class="small-btn" role="button" target="_blank" style="font-size:12px;">code</a>
-        </abbr>
       {% endif %}
     </div>
   {% endif %}
@@ -206,8 +183,6 @@
     </div>
 
     <!-- Links/Buttons -->
-
-    {% comment %}
     <div class="links">
       {% if entry.award %}
         <a class="award btn btn-sm z-depth-0" role="button">
@@ -276,9 +251,6 @@
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
       {% endif %}
     </div>
-    {% endcomment %}
-
-
     {% if site.enable_publication_badges %}
       {% assign entry_has_altmetric_badge = false %}
       {% if entry.altmetric and entry.altmetric != 'false' %}
@@ -299,7 +271,6 @@
       {% if entry.inspirehep_id %}
         {% assign entry_has_inspirehep_badge = true %}
       {% endif %}
-      {% comment %}
       {% if entry_has_altmetric_badge or entry_has_dimensions_badge or entry_has_google_scholar_badge or entry_has_inspirehep_badge %}
         <div class="badges">
           {% if site.enable_publication_badges.altmetric and entry_has_altmetric_badge %}
@@ -363,7 +334,6 @@
           {% endif %}
         </div>
       {% endif %}
-      {% endcomment %}
     {% endif %}
 
     {% if entry.award %}
