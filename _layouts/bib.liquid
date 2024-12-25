@@ -1,76 +1,77 @@
 ---
 ---
 <div class="row">
-  {% comment %}
-  {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-2 abbr">
-      {%- if entry.abbr -%}
-        {%- if site.data.venues[entry.abbr] -%}
-          {% assign venue_style = null %}
-          {% if site.data.venues[entry.abbr].color != blank %}
-            {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
-          {%- endif -%}
-          <abbr
-            class="badge rounded w-100"
-            {% if venue_style %}
-              {{ venue_style }}
-            {% endif -%}
-          >
-            {% if site.data.venues[entry.abbr].url %}
-              <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
-            {% else %}
-              <div>{{- entry.abbr -}}</div>
-            {% endif %}
-          </abbr>
-        {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
-        {% endif %}
-      {% endif %}
-      {% if entry.preview %}
-        {% if entry.preview contains '://' %}
-          <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
-        {% else %}
-          {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
-          {%
-            include figure.liquid
-            loading="eager"
-            path=entry_path
-            sizes = "200px"
-            class="preview z-depth-1 rounded"
-            zoomable=true
-            alt=entry.preview
-          %}
-        {% endif %}
-      {% endif %}
-    </div>
-  {% endif %}
-  {% endcomment %}
 
-  <!-- add new pdf bib code -->
+  <!-- Side display -->
   {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-2 abbr">
-      <abbr class="badge rounded w-100">
-        {% if entry.pdf %}
-            <a href="/assets/pdf/{{ entry.pdf }}" class="small-btn" role="button" target="_blank" style="font-size:12px;">pdf</a>
-        {% else %}
-            <a href="#" onclick="return false;">pdf</a>
-        {% endif %}
-      </abbr>
-      <abbr class="badge rounded w-100">
-        <a href="#" class="small-btn" role="button" style="font-size:12px;" onclick="event.preventDefault();copyToClipboard(`{{ entry.bibtex }};`)">bib</a>
-      </abbr>
-      {% if entry.code %}
+    <!-- use button of pdf bib code on side -->
+    {% if site.enable_publication_sidebutton %}
+      <div class="col col-sm-2 abbr">
         <abbr class="badge rounded w-100">
-          <a href="{{ entry.code }}" class="small-btn" role="button" target="_blank" style="font-size:12px;">code</a>
+          {% if entry.pdf %}
+              <a href="/assets/pdf/{{ entry.pdf }}" class="small-btn" role="button" target="_blank" style="font-size:12px;">pdf</a>
+          {% else %}
+              <a href="#" onclick="return false;">pdf</a>
+          {% endif %}
         </abbr>
-      {% endif %}
-    </div>
+        <abbr class="badge rounded w-100">
+          <a href="#" class="small-btn" role="button" style="font-size:12px;" onclick="event.preventDefault();copyToClipboard(`{{ entry.bibtex }};`)">bib</a>
+        </abbr>
+        {% if entry.code %}
+          <abbr class="badge rounded w-100">
+            <a href="{{ entry.code }}" class="small-btn" role="button" target="_blank" style="font-size:12px;">code</a>
+          </abbr>
+        {% endif %}
+      </div>
+    {% else %}
+    <!-- use publication thumbnails on side -->
+      <div class="col col-sm-2 abbr">
+        {%- if entry.abbr -%}
+          {%- if site.data.venues[entry.abbr] -%}
+            {% assign venue_style = null %}
+            {% if site.data.venues[entry.abbr].color != blank %}
+              {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
+            {%- endif -%}
+            <abbr
+              class="badge rounded w-100"
+              {% if venue_style %}
+                {{ venue_style }}
+              {% endif -%}
+            >
+              {% if site.data.venues[entry.abbr].url %}
+                <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
+              {% else %}
+                <div>{{- entry.abbr -}}</div>
+              {% endif %}
+            </abbr>
+          {% else %}
+            <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
+          {% endif %}
+        {% endif %}
+        {% if entry.preview %}
+          {% if entry.preview contains '://' %}
+            <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
+          {% else %}
+            {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
+            {%
+              include figure.liquid
+              loading="eager"
+              path=entry_path
+              sizes = "200px"
+              class="preview z-depth-1 rounded"
+              zoomable=true
+              alt=entry.preview
+            %}
+          {% endif %}
+        {% endif %}
+      </div>
+    {% endif %}
   {% endif %}
 
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
-    <div class="title">{{ entry.title }}</div>
+    <div class="title"><a href="{{entry.url}}" style="color: inherit">{{ entry.title }}</a></div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
@@ -201,12 +202,28 @@
     <div class="periodical">
       {{ periodical | strip }}
     </div>
+
     <div class="periodical">
-      {{ entry.note | strip }}
+      {% if entry.note %}
+        {% assign notes = entry.note | split: ',' %}
+        {% for item in notes %}
+          {% if item == "CCF-A" %}
+            <em><b><span style="color: #B509AC;">{{ item }}</span></b></em>
+          {% else %}
+            <em><b>{{ item }}</b></em>
+          {% endif %}
+          {% if forloop.index < forloop.length %}
+            , {% endif %}
+        {% endfor %}
+      {% else %}
+        {{ strip }}
+      {% endif %}
     </div>
 
-    <!-- Links/Buttons -->
 
+
+
+    <!-- Links/Buttons -->
     {% comment %}
     <div class="links">
       {% if entry.award %}
