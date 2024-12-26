@@ -179,7 +179,7 @@
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
     {% if entry.shortname %}
-      {% capture entrytype %}{{ entry.shortname }} (short){% endcapture %}
+      {% capture entrytype %}{{ entry.shortname }} (Short){% endcapture %}
     {% else %}
       {% if entry.type == 'article' %}
         {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
@@ -247,8 +247,6 @@
         {% endif %}
       </div>
     {% endunless %}
-
-
 
 
     <!-- Links/Buttons -->
