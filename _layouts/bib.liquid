@@ -73,7 +73,7 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Author -->
-    <div class="author">
+    <div class="author" style="color: black !important">
       {% assign author_array_size = entry.author_array | size %}
 
       {% if site.enable_author_autohide %}
