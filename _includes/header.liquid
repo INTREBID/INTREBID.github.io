@@ -17,7 +17,11 @@
               {{- site.last_name -}}
             {% endif %}
           {% else %}
-            {{- site.title -}}
+            {% if site.short_title %}
+              {{- site.short_title -}}
+            {% else %}
+              {{- site.title -}}
+            {% endif %}
           {% endif %}
         </a>
       {% elsif site.enable_navbar_social %}
@@ -121,7 +125,7 @@
             <!-- Search -->
             <li class="nav-item">
               <button id="search-toggle" title="Search" onclick="openSearchModal()">
-                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+                <span class="nav-link"><i class="ti ti-search"></i></span>
               </button>
             </li>
           {% endif %}
