@@ -19,5 +19,7 @@ services:
       - .:/srv/jekyll
     environment:
       - JEKYLL_ENV=
+    user: root
+    command: sh -c "chmod +x /tmp/entry_point.sh && /tmp/entry_point.sh"
 
 

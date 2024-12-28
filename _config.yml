@@ -224,6 +224,14 @@ plugins:
   - jekyll-twitter-plugin
   - jemoji
   - terser
+  - jekyll-polyglot
+
+
+# 定义默认语言
+default_lang: "en"
+# 网站支持的语言列表
+languages: ["zh", "en"]
+
 
 # Sitemap settings
 defaults:

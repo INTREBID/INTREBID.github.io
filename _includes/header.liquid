@@ -138,6 +138,19 @@
               </button>
             </li>
           {% endif %}
+          
+          <!-- 语言切换按钮 -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{ site.lang | upcase }}
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+              {% for lang in site.languages %}
+                <a class="dropdown-item" href="/{{ lang }}/">{{ lang | upcase }}</a>
+              {% endfor %}
+            </div>
+          </li>
+
         </ul>
       </div>
     </div>

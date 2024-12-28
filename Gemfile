@@ -21,9 +21,12 @@ group :jekyll_plugins do
     gem 'terser'
     gem 'unicode_utils'
     gem 'webrick'
+    gem 'logger', '1.6.4'
 end
 group :other_plugins do
     gem 'css_parser'
     gem 'feedjira'
     gem 'httparty'
 end
+gem 'observer'
+gem 'jekyll-polyglot'
