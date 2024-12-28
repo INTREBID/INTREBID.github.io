@@ -43,8 +43,7 @@ layout: default
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-        <div class="line"></div>
+        <div class="line"><a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a></div>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -52,8 +51,7 @@ layout: default
     <!-- Latest posts -->
     {% if site.latest_posts.enabled %}
       <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-        <div class="line"></div>
+        <div class="line"><a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a></div>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
@@ -61,8 +59,7 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-        <div class="line"></div>
+        <div class="line"><a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a></div>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
