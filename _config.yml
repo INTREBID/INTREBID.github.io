@@ -4,9 +4,9 @@
 
 title: INTelligent information REtrieval and BIg Data # the website title (if blank, full name will be used instead)
 short_title: INTREBID LAB # short title for the site (displayed in the navbar)
-first_name:
+first_name: INTREBID
 middle_name:
-last_name: INTREBID
+last_name: LAB
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"

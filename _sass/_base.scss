@@ -708,12 +708,12 @@ footer.sticky-bottom {
 
 // Publications
 
-.pubrow{
+.pubrow {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  background-color: #f2f6fc;
   border-radius: 5px;
+  background-color: var(--global-pubrow-bg-color);
 }
 // .circleline{
 //   display: flex;
@@ -726,28 +726,18 @@ footer.sticky-bottom {
 //   background-color: #55D6EE;
 //   border-radius: 50%;
 // }
-.line{
-  [data-theme='light'] & {
-    background: linear-gradient(to right,
-      #63bfef,  /* 开始：浅蓝色 */
-      #b4e2ff,  /* 中间过渡：更浅的蓝色 */
-      #f2f6fc,  /* 结束：与背景色相同 */
-      #ffffff   /* 最终过渡到白色 */
-    );
-  }
-
-  [data-theme='dark'] & {
-    background: linear-gradient(to right,
-      var(--global-theme-color),     /* Start with theme color */
-      var(--global-theme-color-50),  /* Mid transition */
-      var(--global-bg-color)         /* Fade to background */
-    );
-  }
-
-  height: 5px;
-  border-radius: 3px;
-  width: 100%;
+.line {
+  background: linear-gradient(to right,
+    var(--global-gradient-start) 0%,
+    var(--global-gradient-mid) 20%,
+    var(--global-gradient-end) 40%,
+    var(--global-gradient-final) 60%
+  );
+  border-radius: 7px;
+  width: 80%;
   opacity: 0.8;
+  padding: 0.1em 0.1em;
+  display: inline-block;
 }
 
 .publications {
@@ -770,13 +760,24 @@ footer.sticky-bottom {
   }
 
   h2.bibliography {
-    color: var(--global-divider-color);
-    //border-top: 1px solid var(--global-divider-color);
+    color: var(--global-text-color);
     padding-top: 1rem;
     margin-top: 2rem;
-    text-align: right;
-  }
+    margin-bottom: 1rem;
+    text-align: left;
 
+    background: linear-gradient(to right,
+      var(--global-gradient-start) 0%,
+      var(--global-gradient-mid) 20%,
+      var(--global-gradient-end) 40%,
+      var(--global-gradient-final) 60%
+    );
+    border-radius: 7px;
+    width: 80%;
+    opacity: 0.8;
+    padding: 0.1em 0.1em;
+    display: inline-block;
+  }
 
   ol.bibliography {
     list-style: none;
@@ -797,15 +798,28 @@ footer.sticky-bottom {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         abbr {
-          //display: inline-block;
-          //background-color: var(--global-theme-color);
           margin-bottom: 0.2rem;
           margin-top: 0.2rem;
 
+          // PDF button style
+          &[style*="pdf"] {
+            background-color: var(--global-abbr-pdf-color);
+          }
+
+          // BIB button style
+          &[style*="bib"] {
+            background-color: var(--global-abbr-bib-color);
+          }
+
+          // CODE button style
+          &[style*="code"] {
+            background-color: var(--global-abbr-code-color);
+          }
+
           a {
             color: white;
-
             &:hover {
               text-decoration: none;
             }
@@ -880,7 +894,7 @@ footer.sticky-bottom {
         padding-bottom: 0.5rem;
         span {
           display: inline-block;
-          color: $black-color;
+          color: var(--global-text-color);
           height: 100%;
           padding-right: 0.5rem;
           vertical-align: middle;

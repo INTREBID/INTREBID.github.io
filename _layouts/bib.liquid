@@ -7,17 +7,17 @@
     <!-- use button of pdf bib code on side -->
     {% if site.enable_publication_sidebutton %}
       <div class="col col-sm-2 abbr">
-        <abbr class="badge rounded w-100" style="background-color:rgb(235, 107, 107);">
+        <abbr class="badge rounded w-100" style="pdf">
           {% if entry.pdf %}
               <a href="/assets/pdf/{{ entry.pdf }}" class="small-btn" role="button" target="_blank" style="font-size:12px;">pdf</a>
           {% else %}
               <a href="#" onclick="return false;">pdf</a>
           {% endif %}
         </abbr>
-        <abbr class="badge rounded w-100" style="background-color:rgb(100, 181, 246);">
+        <abbr class="badge rounded w-100" style="bib">
           <a href="#" class="small-btn" role="button" style="font-size:12px;" onclick="event.preventDefault();copyToClipboard(`{{ entry.bibtex }};`)">bib</a>
         </abbr>
-        <abbr class="badge rounded w-100" style="background-color:rgb(129, 199, 132);">
+        <abbr class="badge rounded w-100" style="code">
           {% if entry.code %}
             <a href="{{ entry.code }}" class="small-btn" role="button" target="_blank" style="font-size:12px;">code</a>
           {% else %}
@@ -73,7 +73,7 @@
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Author -->
-    <div class="author" style="color: black !important">
+    <div class="author">
       {% assign author_array_size = entry.author_array | size %}
 
       {% if site.enable_author_autohide %}
@@ -176,7 +176,7 @@
       {% endif %}
     </div>
     <!-- Title -->
-    <div class="title" style="color: black !important;"><a href="{{entry.url}}" style="color: inherit">{{ entry.title }}</a></div>
+    <div class="title"><a href="{{entry.url}}" style="color: inherit">{{ entry.title }}</a></div>
 
 
 
@@ -217,7 +217,7 @@
 
       {% assign entrytype_text = entrytype | strip_html | strip %}
       {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
-      <div class="periodical" style="color: black !important;">
+      <div class="periodical">
         {{ periodical | strip }}
       </div>
     {% endcomment %}
@@ -229,13 +229,13 @@
     {% endif %}
 
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entry.note %}, {% endif %}{% if entry.note %} {{ entrynote | strip }}{% endif %}{% endcapture %}
-    <div class="periodical" style="color: black !important;">
+    <div class="periodical">
       {{ periodical | strip }}
     </div>
 
     <!-- note on the new line. -->
     {% unless entry.shortname %}
-      <div class="periodical" style="color: black !important;">
+      <div class="periodical">
         {% if entry.note %}
           {% assign notes = entry.note | split: ',' %}
           {% for item in notes %}

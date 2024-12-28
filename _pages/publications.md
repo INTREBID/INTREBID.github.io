@@ -16,8 +16,7 @@ nav_order: 2
 <div class="publications">
 <div class="circleline">
 <div class="circle"></div>
-<div class="line"></div>
+<!-- <div class="line"></div> -->
 </div>
 {% bibliography %}
-
 </div>
