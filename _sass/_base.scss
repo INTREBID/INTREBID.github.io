@@ -712,9 +712,7 @@ footer.sticky-bottom {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  //margin-right: -15px;
-  //margin-left: -15px;
-  background-color: #E3F0FA;
+  background-color: #f2f6fc;
   border-radius: 5px;
 }
 // .circleline{
@@ -729,12 +727,27 @@ footer.sticky-bottom {
 //   border-radius: 50%;
 // }
 .line{
-  //background-color: #1d5885;
-  //background: linear-gradient(to right, red, yellow, green);
-  background-image: url('/assets/img/line.jpg');
+  [data-theme='light'] & {
+    background: linear-gradient(to right,
+      #63bfef,  /* 开始：浅蓝色 */
+      #b4e2ff,  /* 中间过渡：更浅的蓝色 */
+      #f2f6fc,  /* 结束：与背景色相同 */
+      #ffffff   /* 最终过渡到白色 */
+    );
+  }
+
+  [data-theme='dark'] & {
+    background: linear-gradient(to right,
+      var(--global-theme-color),     /* Start with theme color */
+      var(--global-theme-color-50),  /* Mid transition */
+      var(--global-bg-color)         /* Fade to background */
+    );
+  }
+
   height: 5px;
-  background-size: cover;
   border-radius: 3px;
+  width: 100%;
+  opacity: 0.8;
 }
 
 .publications {

@@ -19,5 +19,9 @@ services:
       - .:/srv/jekyll
     environment:
       - JEKYLL_ENV=
-
-
+    command: >
+      bash -c "
+        gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/ &&
+        gem install terser &&
+        bundle exec jekyll serve --watch --port 8080 --host 0.0.0.0 --livereload
+      "

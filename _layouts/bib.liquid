@@ -7,17 +7,17 @@
     <!-- use button of pdf bib code on side -->
     {% if site.enable_publication_sidebutton %}
       <div class="col col-sm-2 abbr">
-        <abbr class="badge rounded w-100" style="background-color:rgb(187, 46, 31);">
+        <abbr class="badge rounded w-100" style="background-color:rgb(235, 107, 107);">
           {% if entry.pdf %}
               <a href="/assets/pdf/{{ entry.pdf }}" class="small-btn" role="button" target="_blank" style="font-size:12px;">pdf</a>
           {% else %}
               <a href="#" onclick="return false;">pdf</a>
           {% endif %}
         </abbr>
-        <abbr class="badge rounded w-100" style="background-color:rgb(17, 136, 195);">
+        <abbr class="badge rounded w-100" style="background-color:rgb(100, 181, 246);">
           <a href="#" class="small-btn" role="button" style="font-size:12px;" onclick="event.preventDefault();copyToClipboard(`{{ entry.bibtex }};`)">bib</a>
         </abbr>
-        <abbr class="badge rounded w-100" style="background-color:rgb(12, 100, 64);">
+        <abbr class="badge rounded w-100" style="background-color:rgb(129, 199, 132);">
           {% if entry.code %}
             <a href="{{ entry.code }}" class="small-btn" role="button" target="_blank" style="font-size:12px;">code</a>
           {% else %}
