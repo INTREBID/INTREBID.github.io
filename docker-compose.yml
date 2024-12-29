@@ -13,7 +13,7 @@ services:
     #     USERID: # id -u
     #     USERNAME: # echo $USER
     ports:
-      - 18888:8080
+      - 20000:8080
       - 38888:35729
     volumes:
       - .:/srv/jekyll

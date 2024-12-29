@@ -19,8 +19,36 @@ strong {
   color: var(--global-text-color);
 }
 
+// 在这里添加 h2 的特定样式
+h2 {
+  font-size: 1.75rem; // 减小 h2 的字号
+}
+
 hr {
-  border-top: 1px solid var(--global-divider-color);
+  border-top: 0px solid var(--global-divider-color);
+  margin-top: 2rem;
+    text-align: right;
+    [data-theme='light'] & {
+      background: linear-gradient(to right,
+        #63bfef,  /* 开始：浅蓝色 */
+        #b4e2ff,  /* 中间过渡：更浅的蓝色 */
+        #f2f6fc,  /* 结束：与背景色相同 */
+        #ffffff   /* 最终过渡到白色 */
+      );
+    }
+
+    [data-theme='dark'] & {
+      background: linear-gradient(to right,
+        var(--global-theme-color),     /* Start with theme color */
+        var(--global-theme-color-50),  /* Mid transition */
+        var(--global-bg-color)         /* Fade to background */
+      );
+    }
+
+    height: 40px;
+    border-radius: 3px;
+    width: 100%;
+    opacity: 0.8;
 }
 
 table {
@@ -215,7 +243,7 @@ ul.task-list input[type="checkbox"] {
   margin-right: 1rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 575px) {
   .profile {
     width: 30%;
 
@@ -248,20 +276,23 @@ ul.task-list input[type="checkbox"] {
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
-  background-image: url('/assets/img/background_header1.jpg');
-  background-size: cover;
+  background-image: url('/assets/img/background_header2.jpg'),
+                    linear-gradient(to right, #13ACCB 46%, #FFFFFF 40%);
+  background-size: contain , 100%;
+  background-position: 46% center, center;
+  background-repeat: no-repeat;
   //background: linear-gradient(to right, rgb(8, 167, 203), rgb(152, 226, 233), rgb(255, 255, 255));
   //background: linear-gradient(to right, red, yellow, green);
 }
-
-@media (max-width: 768px) {
+@media (max-width: 930px) {
   .navbar {
     box-shadow: none;
     border-bottom: 1px solid var(--global-divider-color);
     background-color: var(--global-bg-color);
     opacity: 0.95;
-    background-image: url('/assets/img/background_header1.jpg');
-    background-size: cover;
+    background-image: url('/assets/img/background_header.jpg');
+    background-size: auto;
+    background-position: left, top;
   }
 }
 .navbar .dropdown-menu {
@@ -270,6 +301,7 @@ ul.task-list input[type="checkbox"] {
 
   a:not(.active) {
     color: var(--global-text-color);
+    //color: black;
   }
 
   a:hover {
@@ -298,12 +330,13 @@ ul.task-list input[type="checkbox"] {
   }
 
   .navbar-brand {
-    color: var(--global-text-color);
+    color: var(--global-text-color-fixed);
     font-size: 20px;
+    font-weight: bold !important;
   }
 
   .navbar-nav .nav-item .nav-link {
-    color: var(--global-text-color);
+    color: var(--global-text-color-fixed);
 
     &:hover {
       color: var(--global-hover-color);
@@ -312,8 +345,8 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
-    font-weight: bolder;
-    color: var(--global-theme-color);
+    font-weight: bold;
+    color: var(--global-text-color-fixed);
 
     &:hover {
       color: var(--global-hover-color);
@@ -698,10 +731,7 @@ footer.sticky-bottom {
 
   h2.category {
     color: var(--global-divider-color);
-    border-bottom: 1px solid var(--global-divider-color);
-    padding-top: 0.5rem;
     margin-top: 2rem;
-    margin-bottom: 1rem;
     text-align: right;
   }
 }
@@ -736,7 +766,7 @@ footer.sticky-bottom {
   border-radius: 7px;
   width: 80%;
   opacity: 0.8;
-  padding: 0.1em 0.1em;
+  padding: 0.3em 0.3em;
   display: inline-block;
 }
 
@@ -832,7 +862,7 @@ footer.sticky-bottom {
         }
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 575px) {
         .abbr {
           flex-direction: row;
           gap: 20px;
@@ -1174,10 +1204,10 @@ nav[data-toggle="toc"] {
 }
 
 /* small screens */
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   /* override stickyness so that the navigation does not follow scrolling */
   nav[data-toggle="toc"] {
-    visibility: hidden;
+    visibility: hidden !important;
     height: 0;
     top: 0;
   }
