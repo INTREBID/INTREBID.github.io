@@ -172,6 +172,7 @@ ul.task-list input[type="checkbox"] {
   .card-img {
     width: 100%;
     padding-top: 1.25rem;
+    object-fit: contain;   // 图片保持等比例缩放
   }
 
   .card-title {
@@ -252,6 +253,9 @@ ul.task-list input[type="checkbox"] {
   background-size: cover;
   //background: linear-gradient(to right, rgb(8, 167, 203), rgb(152, 226, 233), rgb(255, 255, 255));
   //background: linear-gradient(to right, red, yellow, green);
+  @media (max-width: 576px) {
+    background-image: url('/assets/img/line.jpg') !important; // 小于576px时更换图片
+  }
 }
 
 @media (max-width: 768px) {
@@ -297,9 +301,27 @@ ul.task-list input[type="checkbox"] {
     }
   }
 
+  // .navbar-brand {
+  //   color: var(--global-text-color);
+  //   font-size: 20px;
+  //   // 添加文字阴影效果
+  //   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+  //   // 或者添加背景渐变
+  //   background: linear-gradient(90deg, 
+  //               rgba(8, 167, 203, 0.8) 0%,
+  //               rgba(8, 167, 203, 0.8) 50%,
+  //               rgba(255, 255, 255, 0.8) 100%);
+  //   -webkit-background-clip: text;
+  //   -webkit-text-fill-color: transparent;
+    
+  //   // 或者添加文字描边
+  //   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+  // }
   .navbar-brand {
-    color: var(--global-text-color);
+    color: var(--global-bg-color);
     font-size: 20px;
+    font-weight: 700;
   }
 
   .navbar-nav .nav-item .nav-link {
@@ -312,8 +334,8 @@ ul.task-list input[type="checkbox"] {
 
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
-    font-weight: bolder;
-    color: var(--global-theme-color);
+    font-weight: 800;
+    color: var(--global-text-color);
 
     &:hover {
       color: var(--global-hover-color);
@@ -737,6 +759,8 @@ footer.sticky-bottom {
   border-radius: 3px;
 }
 
+
+
 .publications {
   margin-top: 2rem;
 
@@ -1147,12 +1171,12 @@ nav[data-toggle="toc"] {
 }
 
 /* small screens */
-@media (max-width: 576px) {
+@media (max-width: 700px) {
   /* override stickyness so that the navigation does not follow scrolling */
   nav[data-toggle="toc"] {
-    visibility: hidden;
-    height: 0;
-    top: 0;
+    visibility: hidden !important;
+    height: 0 !important;
+    top: 0 !important;
   }
 }
 
@@ -1242,7 +1266,27 @@ ninja-keys::part(ninja-input-wrapper) {
   background: var(--global-bg-color);
 }
 
+
+
 // newsletter
+
+.news {
+  color: var(--global-text-color); /*这个设置了字体颜色*/
+}
+
+.table-borderless th {
+  color: var(--global-text-color); /*表头字体颜色*/
+}
+
+.table-borderless td {
+  color: var(--global-text-color); /*表格内容字体颜色*/
+}
+
+.news-title {
+  color: var(--global-text-color); /*超链接颜色*/
+}
+
+
 .newsletter-form-container {
   margin-bottom: 20px;
 }
@@ -1355,6 +1399,7 @@ ninja-keys::part(ninja-input-wrapper) {
   }
 }
 
+
 // popover is used for annotation in bib.liquid
 .popover {
   background-color: var(--global-bg-color);
@@ -1399,3 +1444,4 @@ ninja-keys::part(ninja-input-wrapper) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
 }
+
