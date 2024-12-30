@@ -11,17 +11,19 @@
           {% if entry.pdf %}
               <a href="/assets/pdf/{{ entry.pdf }}" class="small-btn" role="button" target="_blank" style="font-size:12px;">pdf</a>
           {% else %}
-              <a href="#" onclick="return false;">pdf</a>
+              <a href="#" onclick="return false;" style="font-size:12px; opacity: 0.3;">pdf</a>
           {% endif %}
         </abbr>
         <abbr class="badge rounded w-100" style="bib">
-          <a href="#" class="small-btn" role="button" style="font-size:12px;" onclick="event.preventDefault();copyToClipboard(`{{ entry.bibtex }};`)">bib</a>
+          <div id="bibtex-{{ entry.key }}" style="display: none;">{{ entry.bibtex }}</div>
+          <a href="#" class="small-btn" role="button" style="font-size:12px;"
+             onclick="event.preventDefault();copyToClipboard(document.getElementById('bibtex-{{ entry.key }}').textContent)">bib</a>
         </abbr>
         <abbr class="badge rounded w-100" style="code">
           {% if entry.code %}
             <a href="{{ entry.code }}" class="small-btn" role="button" target="_blank" style="font-size:12px;">code</a>
           {% else %}
-              <a href="#" onclick="return false;">no code</a>
+              <a href="#" onclick="return false;" style="font-size:12px; opacity: 0.3;">code</a>
           {% endif %}
         </abbr>
       </div>
@@ -184,7 +186,7 @@
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
     {% if entry.shortname %}
-      {% capture entrytype %}{{ entry.shortname }} (Short){% endcapture %}
+      {% capture entrytype %}{{ entry.shortname }} {% endcapture %}
     {% else %}
       {% if entry.type == 'article' %}
         {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}

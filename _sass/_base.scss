@@ -395,7 +395,7 @@ ul.task-list input[type="checkbox"] {
     display: block;
     width: 22px;
     height: 2px;
-    background-color: var(--global-text-color);
+    background-color: var(--global-text-color-fixed);
     border-radius: 1px;
     margin-bottom: 4px;
     transition: all 0.2s;
@@ -435,7 +435,7 @@ ul.task-list input[type="checkbox"] {
   padding: 0;
   border: 0;
   background-color: inherit;
-  color: var(--global-text-color);
+  color: var(--global-text-color-fixed);
 
   &:hover {
     color: var(--global-hover-color);

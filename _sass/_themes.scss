@@ -52,17 +52,15 @@
   --global-gradient-end: #f2f6fc;
   --global-gradient-final: #{$white-color};
 
-  #light-toggle-system {
+  #light-toggle-dark {
     padding-left: 10px;
     padding-top: 12px;
     display: block;
   }
 
-  #light-toggle-dark {
-    display: none;
-  }
-
   #light-toggle-light {
+    padding-left: 10px;
+    padding-top: 12px;
     display: none;
   }
 
@@ -139,41 +137,12 @@ html[data-theme="dark"] {
   .only-dark {
     display: block;
   }
-}
-
-html[data-theme-setting="dark"] {
-  #light-toggle-system {
-    display: none;
-  }
-
-  #light-toggle-dark {
-    padding-left: 10px;
-    padding-top: 12px;
-    display: block;
-  }
-
-  #light-toggle-light {
-    display: none;
-  }
-
-  #back-to-top {
-    color: var(--global-back-to-top-text-color);
-    background: var(--global-back-to-top-bg-color);
-  }
-}
-
-html[data-theme-setting="light"] {
-  #light-toggle-system {
-    display: none;
-  }
 
   #light-toggle-dark {
     display: none;
   }
 
   #light-toggle-light {
-    padding-left: 10px;
-    padding-top: 12px;
     display: block;
   }
 }
