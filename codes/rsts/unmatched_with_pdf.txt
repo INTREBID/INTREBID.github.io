@@ -1,0 +1,40 @@
+❗ 未匹配但存在PDF的条目:
+
+- Item: <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list .5in"><font face="Times New Roman">
+<xpl-modal _ngcontent-rrd-c136="" _nghost-rrd-c76="">
+<a _ngcontent-rrd-c136="" placement="bottom auto" triggers="hover">Haopeng Li</a></xpl-modal>, 
+	<xpl-modal _ngcontent-rrd-c136="" _nghost-rrd-c76="">
+<a _ngcontent-rrd-c136="" placement="bottom auto" triggers="hover">Qiuhong Ke</a></xpl-modal>, 
+	<xpl-modal _ngcontent-rrd-c136="" _nghost-rrd-c76="">
+<a _ngcontent-rrd-c136="" placement="bottom auto" triggers="hover">Mingming 
+	Gong</a></xpl-modal>, 
+	<xpl-modal _ngcontent-rrd-c136="" _nghost-rrd-c76="">
+<a _ngcontent-rrd-c136="" placement="bottom auto" triggers="hover">Rui Zhang.
+	</a></xpl-modal>
+<xpl-modal _ngcontent-rrd-c136="" _nghost-rrd-c76="">
+<a _ngcontent-rrd-c136="" href="TPAMI%202022%20-%20Video_Joint_Modelling_Based_on_Hierarchical_Transformer_for_Co_summarization.pdf" placement="bottom auto" triggers="hover">Video Joint Modelling Based on Hierarchical Transformer for 
+	Co-summarization.</a><a _ngcontent-rrd-c136="" placement="bottom auto" triggers="hover">
+</a></xpl-modal></font><span class="SpellE">
+<span style='font-family:"Times New Roman",serif; font-style:italic'>Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</span><font face="Times New Roman,serif">, 
+	45(3), 3904 - 3917, 2023. (<a href="https://github.com/ruizhang-ai/VJMHT-Video_Joint_Modelling_Based_on_Hierarchical_Transformer_for_Co_summarization">source 
+	code</a>)</font></span><font face="Times New Roman"><xpl-modal _ngcontent-rrd-c136="" _nghost-rrd-c76=""><br/>¡¡</xpl-modal></font></li>
+  PDF: haopeng-li.pdf
+
+- Item: <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list .5in"><font face="Times New Roman">Zhenghua, Shijie Liu, Di Yuan, Lei Wang, 
+	Junyang Chen, Thomas Lukasiewicz, Zhigang Fu, Rui Zhang.
+	<a href="Neurocomputing%202022%20¦Ø-net%20Dual%20supervised%20medical%20image%20segmentation%20with%20multi-dimensional%20self-attention%20and%20diversely-connected%20multi-scale%20convolution.pdf">¦Ø-net: Dual supervised medical image segmentation with multi-dimensional 
+	self-attention and diversely-connected multi-scale convolution.</a> 
+	Neurocomputing, 500, 177-190, 2022.<br/>¡¡</font></li>
+  PDF: -net-dual-supervised-medical-image-segmentation-with-multi-dimensional-self-attention-and-diversely-connected-multi-scale-convolution.pdf
+
+- Item: <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list .5in"><span class="SpellE">
+<span style="font-family: 'Times New Roman',serif">Jin<span style='font-family:"Times New Roman",serif'> Huang, Rui Zhang, and Jeffrey
+     Xu Yu.
+	<a href="Icdm2015-hyperx.pdf" style="font-family: 'Times New Roman',serif">Scalable Hypergraph Processing</a>, The
+     IEEE International Conference on Data Mining (ICDM), 2015. (Short)<br/>
+</span>¡¡</span></span></li>
+  PDF: scalable-hypergraph-processing.pdf
+

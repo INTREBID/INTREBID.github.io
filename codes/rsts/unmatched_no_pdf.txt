@@ -1,0 +1,129 @@
+❌ 未匹配且无PDF的条目:
+
+- Item: <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list .5in"><span class="SpellE">
+<font face="Times New Roman,serif">Yu Gu, Kaiqiang Yu, 
+	Zhen Song, Jianzhong Qi, Zhigang Wang, Ge Yu, and Rui Zhang. Distributed 
+	Hypergraph Processing Using Intersection Graphs. </font></span><i>
+<span class="SpellE" style='font-family:
+     "Times New Roman",serif'>IEEE Transactions on Knowledge and 
+	Data Engineering (</span></i><span class="SpellE"><font face="Times New Roman,serif"><i>TKDE)</i>, 
+	34(7), 3182 - 3195, 2022.<br/>¡¡</font></span></li>
+
+- Item: <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list .5in"><span class="SpellE">
+<span style="font-family: 'Times New Roman',serif">
+<span style='font-family:
+     "Times New Roman",serif'>Jianzhong Qi, Wei Wang, Rui Zhang, and Zhuowei Zhao. A Learning Based Approach to Predict
+     Shortest-Path Distances. 23th International Conference on Extending
+     Database Technology (EDBT), 2020.<br/></span>¡¡</span></span></li>
+
+- Item: <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list .5in"><span class="SpellE">
+<span style="font-family: 'Times New Roman',serif">Xi Zheng, Yuqun Zhang, Tianlei Zheng, Yao Deng, ErXi
+     Dong, Rui Zhang, Xiao Liu, SmartVM: a SLA-aware
+     microservice deployment framework,  World
+     Wide Web Journal (WWWJ), 22, 275¨C293, 2019.<br/>¡¡</span></span><o:p></o:p></li>
+
+- Item: <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list .5in"><span class="SpellE">
+<span style="font-family: 'Times New Roman',serif">
+<span style='font-family:"Times New Roman",serif'>Tanzima</span><span style='font-family:"Times New Roman",serif'> Hashem, Lars Kulik, Kotagiri Ramamohanarao, Rui
+     Zhang, Subarna Chowdhury Soma, Protecting
+     Privacy for Distance and Rank Based Group Nearest Neighbor Queries, World
+     Wide Web Journal (WWWJ), 22, 375¨C416, 2019.<br/></span>¡¡</span></span></li>
+
+- Item: <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list .5in"><span class="SpellE">
+<span style="font-family: 'Times New Roman',serif">
+<span style='font-family:
+     "Times New Roman",serif'>Jianzhong Qi, Vivek Kumar, Rui Zhang, Egemen Tanin, Goce Trajcevski, and Peter
+     Scheuermann. Continuous Maintenance of Range Sum Heat Maps. Proceedings
+     of the 33th IEEE International Conference on Data Engineering (ICDE) 2018.
+     (demo). <br/></span>¡¡</span></span></li>
+
+- Item: <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list .5in"><span class="SpellE">
+<span style="font-family: 'Times New Roman',serif">Zeyi Wen, Rui Zhang, 
+	Kotagiri Ramamohanarao, Li Yang, Scalable and fast SVM regression using 
+	modern hardware, World Wide Web Journal (WWWJ), 21(2): 261-287, 2018.<span style='font-family:"Times New Roman",serif'><br/></span>¡¡</span></span></li>
+
+- Item: <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list .5in"><span class="SpellE">
+<span style="font-family: 'Times New Roman',serif">Sandra Milligan, Jiazhen
+     He, James Bailey, Rui Zhang, Benjamin IP Rubinstein, Validity: a framework
+     for cross-disciplinary collaboration in mining indicators of learning from
+     MOOC forums, Proceedings of the Sixth International Conference on Learning
+     Analytics &amp; Knowledge, 546-547, 2016.<br/>¡¡</span></span></li>
+
+- Item: <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list .5in"><span class="SpellE">
+<span style="font-family: 'Times New Roman',serif">
+<span style='font-family:
+     "Times New Roman",serif'>Saad Aljubayrin, Bin
+     Yang, Christian S. Jensen, Rui Zhang, Finding non-dominated paths in
+     uncertain road networks. Proceedings of the 24th ACM SIGSPATIAL
+     International Conference on Advances in Geographic Information Systems,
+     (SIGSPATIAL/GIS) 2016: 15:1-15:10.<br/></span>¡¡</span></span></li>
+
+- Item: <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list .5in"><span class="SpellE">
+<span style="font-family: 'Times New Roman',serif">
+<span style='font-family:"Times New Roman",serif'>Xiaojie</span><span style='font-family:"Times New Roman",serif'> Lin, Ye Gu, Rui Zhang, Ju
+     Fan, Linking News and Tweets. 27th Australasian Database Conference (ADC)
+     2016: 467-470<br/></span>¡¡</span></span></li>
+
+- Item: <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list .5in"><span class="SpellE">
+<span style="font-family: 'Times New Roman',serif">
+<span style='font-family:"Times New Roman",serif'>Gitansh</span><span style='font-family:"Times New Roman",serif'> Khirbat,
+     Jianzhong Qi, and Rui Zhang. N-ary Biographical
+     Relation Extraction using Shortest Path Dependencies. 14th Annual
+     Workshop of The Australasian Language Technology Association (ALTA),
+     2016.<br/></span>¡¡</span></span></li>
+
+- Item: <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list .5in"><span class="SpellE">
+<span style="font-family: 'Times New Roman',serif">
+<span style='font-family:"Times New Roman",serif'>Gitansh</span><span style='font-family:"Times New Roman",serif'> Khirbat,
+     Jianzhong Qi, and Rui Zhang. Disambiguating Entities Referred by Web
+     Endpoints using Tree Ensembles. 14th Annual Workshop of The
+     Australasian Language Technology Association (ALTA), 2016.<br/></span>¡¡</span></span></li>
+
+- Item: <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list .5in"><span class="SpellE">
+<span style="font-family: 'Times New Roman',serif">
+<span style='font-family:"Times New Roman",serif'>Weichao</span><span style='font-family:"Times New Roman",serif'> Guo, Kang Chen, Huan Feng, Yongwei Wu, Rui Zhang, Weimin
+     Zheng. MARS: Mobile Application Relaunching Speed-up through Flash-Aware
+     Page Swapping, IEEE Transactions on Computers, 65(3): 916-928,
+     2016.<br/></span>¡¡</span></span></li>
+
+- Item: <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list .5in"><span class="SpellE">
+<span style="font-family: 'Times New Roman',serif">Elizabeth Antoine, Kotagiri Ramamohanarao, Jie
+     Shao, Rui Zhang. Accelerating Spatial Join Operations using Bit-Indices.
+     Australasian Database Conference (ADC) 2011.<br/>¡¡</span></span></li>
+
+- Item: <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list .5in"><span class="SpellE">
+<span style="font-family: 'Times New Roman',serif">Rui Zhang: Nonparametric Data Reduction
+     Techniques. Encyclopedia of Database Systems, 1912, Springer 2009.<br/>¡¡</span></span></li>
+
+- Item: <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list .5in"><span class="SpellE">
+<span style="font-family: 'Times New Roman',serif">Rui Zhang: Parametric Data Reduction Techniques.
+     Encyclopedia of Database Systems, 2044-2045, Springer 2009.<br/>¡¡</span></span></li>
+
+- Item: <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list .5in"><span class="SpellE">
+<span style="font-family: 'Times New Roman',serif">Rui Zhang: Data Reduction. Encyclopedia of
+     Database Systems, 621-626, Springer 2009.<br/>¡¡</span></span></li>
+
+- Item: <li class="MsoNormal" style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo1;tab-stops:list .5in"><span class="SpellE">
+<span style="font-family: 'Times New Roman',serif">H.V. Jagadish, Beng
+     Chin Ooi, Rui Zhang. iDistance
+     Techniques. An entry in Encyclopedia of GIS, 469-471
+     ,Springer 2008.
+	<a href="http://www.springerlink.com/content/h01539/" style="font-family: 'Times New Roman',serif">http://www.springerlink.com/content/h01539/</a>.<br/>¡¡</span></span></li>
+
