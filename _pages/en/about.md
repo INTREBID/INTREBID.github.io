@@ -1,7 +1,7 @@
 ---
 layout: about
 title: Home
-permalink: /en/
+permalink: /en/about/
 lang: en
 subtitle: INTREBID
 

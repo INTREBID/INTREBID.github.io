@@ -1,6 +1,7 @@
 ---
 layout: profiles
-permalink: /people/
+permalink: /en/people/
+lang: en
 title: People
 description: members of the lab or group
 nav: true

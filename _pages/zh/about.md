@@ -1,7 +1,7 @@
 ---
 layout: about
 title: Home
-permalink: /zh/
+permalink: /zh/about/
 subtitle: INTREBID
 lang: zh
 

@@ -231,7 +231,8 @@ plugins:
 default_lang: "en"
 # 网站支持的语言列表
 languages: ["zh", "en"]
-
+exclude_from_localization: ["javascript", "images", "css", "public"]
+parallel_localization: true
 
 # Sitemap settings
 defaults:

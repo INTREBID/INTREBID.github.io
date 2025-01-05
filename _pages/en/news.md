@@ -1,7 +1,8 @@
 ---
 layout: page
 title: News
-permalink: /news/
+permalink: /en/news/
+lang: en
 nav: true
 nav_order: 2
 ---

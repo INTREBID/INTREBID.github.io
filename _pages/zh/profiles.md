@@ -1,6 +1,7 @@
 ---
 layout: profiles
 permalink: /people/
+lang: zh
 title: People
 description: members of the lab or group
 nav: true
