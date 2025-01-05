@@ -125,9 +125,9 @@ html[data-theme="dark"] {
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
 
-  --global-gradient-start: var(--global-theme-color);
-  --global-gradient-mid: var(--global-theme-color-50);
-  --global-gradient-end: var(--global-bg-color);
+  --global-gradient-start: #1a4d66;
+  --global-gradient-mid: #163d52;
+  --global-gradient-end: #{color.adjust($grey-color-dark, $lightness: 2%)};
   --global-gradient-final: var(--global-bg-color);
 
   .only-light {

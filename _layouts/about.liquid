@@ -44,7 +44,7 @@ layout: default
     {% if page.news and site.announcements.enabled %}
       <h2>
         <div class="line">
-          <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
+          <a href="{{ '/news/' | relative_url }}">News</a>
         </div>
       </h2>
       {% include news.liquid limit=true %}
@@ -54,7 +54,7 @@ layout: default
     {% if site.latest_posts.enabled %}
       <h2>
         <div class="line">
-          <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest posts</a>
+          <a href="{{ '/blog/' | relative_url }}">Latest posts</a>
         </div>
       </h2>
       {% include latest_posts.liquid %}
@@ -64,7 +64,7 @@ layout: default
     {% if page.selected_papers %}
       <h2>
         <div class="line">
-          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Pubs.</a>
+          <a href="{{ '/publications/' | relative_url }}">Selected Pubs.</a>
         </div>
       </h2>
       {% include selected_papers.liquid %}

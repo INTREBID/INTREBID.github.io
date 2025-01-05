@@ -21,7 +21,7 @@ strong {
 
 // 在这里添加 h2 的特定样式
 h2 {
-  font-size: 1.75rem; // 减小 h2 的字号
+  font-size: 1.45rem;
 }
 
 hr {
@@ -271,30 +271,54 @@ ul.task-list input[type="checkbox"] {
 
 // Navbar customization
 
+// .navbar {
+//   box-shadow: none;
+//   border-bottom: 1px solid var(--global-divider-color);
+//   background-color: var(--global-bg-color);
+//   opacity: 0.95;
+//   background-image: url('/assets/img/background_header2.jpg'),
+//                     linear-gradient(to right, #13ACCB 35%, #FFFFFF 30%);
+//   background-size: contain, 100%;
+//   background-position: 36% center, center;
+//   background-repeat: no-repeat;
+// }
+
+// @media (max-width: 930px) {
+//   .navbar {
+//     background-image: url('/assets/img/background_header.jpg');
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//   }
+// }
+
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
   background-image: url('/assets/img/background_header2.jpg'),
+                    url('/assets/img/header_white_bg.jpg'),
                     linear-gradient(to right, #13ACCB 46%, #FFFFFF 40%);
-  background-size: contain , 100%;
-  background-position: 46% center, center;
+  background-size: contain, 50% 100%, 100%;
+  background-position: 46% center, right, center;
   background-repeat: no-repeat;
-  //background: linear-gradient(to right, rgb(8, 167, 203), rgb(152, 226, 233), rgb(255, 255, 255));
-  //background: linear-gradient(to right, red, yellow, green);
 }
+
 @media (max-width: 930px) {
   .navbar {
     box-shadow: none;
     border-bottom: 1px solid var(--global-divider-color);
     background-color: var(--global-bg-color);
     opacity: 0.95;
-    background-image: url('/assets/img/background_header.jpg');
-    background-size: auto;
-    background-position: left, top;
+    background-image: url('/assets/img/background_header.jpg'),
+                      url('/assets/img/header_white_bg.jpg');
+    background-size: auto, auto;
+    background-position: left top, right top;
+    background-repeat: no-repeat;
   }
 }
+
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
   border: 1px solid var(--global-divider-color);
@@ -759,15 +783,24 @@ footer.sticky-bottom {
 .line {
   background: linear-gradient(to right,
     var(--global-gradient-start) 0%,
-    var(--global-gradient-mid) 20%,
-    var(--global-gradient-end) 40%,
-    var(--global-gradient-final) 60%
+    var(--global-gradient-mid) 50%,
+    var(--global-gradient-end) 80%,
+    var(--global-gradient-final) 95%
   );
   border-radius: 7px;
-  width: 80%;
-  opacity: 0.8;
+  width: 100%;
+  opacity: 0.9;
   padding: 0.3em 0.3em;
   display: inline-block;
+  margin: 0;
+
+  a {
+    color: var(--global-text-color) !important;
+    &:hover {
+      color: var(--global-theme-color) !important;
+      text-decoration: none;
+    }
+  }
 }
 
 .publications {
@@ -785,7 +818,7 @@ footer.sticky-bottom {
     margin-bottom: 1rem;
 
     span {
-      font-size: 1.5rem;
+      font-size: 1.45rem;
     }
   }
 
@@ -798,12 +831,12 @@ footer.sticky-bottom {
 
     background: linear-gradient(to right,
       var(--global-gradient-start) 0%,
-      var(--global-gradient-mid) 20%,
-      var(--global-gradient-end) 40%,
-      var(--global-gradient-final) 60%
+      var(--global-gradient-mid) 30%,
+      var(--global-gradient-end) 60%,
+      var(--global-gradient-final) 90%
     );
     border-radius: 7px;
-    width: 80%;
+    width: 100%;
     opacity: 0.8;
     padding: 0.1em 0.1em;
     display: inline-block;

@@ -212,10 +212,17 @@ let determineComputedTheme = () => {
 };
 
 let initTheme = () => {
-  // 检查系统主题
-  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  // 设置初始主题
-  setThemeSetting(prefersDark ? 'dark' : 'light');
+  // 首先检查是否有保存的主题设置
+  let savedTheme = localStorage.getItem("theme");
+
+  if (!savedTheme) {
+    // 如果没有保存的主题设置，才使用系统主题
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    setThemeSetting(prefersDark ? 'dark' : 'light');
+  } else {
+    // 如果有保存的主题设置，直接使用
+    setThemeSetting(savedTheme);
+  }
 
   // 添加主题切换按钮事件监听器
   document.addEventListener("DOMContentLoaded", function () {
@@ -225,8 +232,10 @@ let initTheme = () => {
     });
   });
 
-  // 监听系统主题变化
-  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ({ matches }) => {
-    setThemeSetting(matches ? 'dark' : 'light');
-  });
+  // 只有在没有保存的主题设置时，才监听系统主题变化
+  if (!savedTheme) {
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", ({ matches }) => {
+      setThemeSetting(matches ? 'dark' : 'light');
+    });
+  }
 };
