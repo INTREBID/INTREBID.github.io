@@ -139,26 +139,23 @@
             </li>
           {% endif %}
           <!-- 语言切换按钮 -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              {% if page.lang == 'zh' %}
-                中文
-              {% else %}
-                English
-              {% endif %}
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
-              {% for lang in site.languages %}
-                {% if lang == site.lang %}
-                  {% continue %}
-                {% endif %}
-                {% if lang == 'en' %}
-                  <a class="dropdown-item" href="{{ site.baseurl }}/en/">English</a>
+          <li class="nav-item">
+            <span class="nav-link">
+              {% for tongue in site.languages %}
+                {% if tongue == site.default_lang %}
+                  <a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %}
+                      {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %} >
+                    中
+                  </a >
                 {% else %}
-                  <a class="dropdown-item" href="{{ site.baseurl }}/zh/">中文</a>
+                  <a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %}
+                      {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %} >
+                    En
+                  </a >
                 {% endif %}
+                {%- if forloop.last == false -%}/{% endif %}
               {% endfor %}
-            </div>
+            </span>
           </li>
 
         </ul>

@@ -5,6 +5,7 @@ title: Teaching
 description: 讲课的材料. Replace this text with your description.
 nav: true
 nav_order: 6
+lang: zh
 ---
 
 现在没有课程
