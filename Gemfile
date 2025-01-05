@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://gems.ruby-china.com/'
 group :jekyll_plugins do
     gem 'classifier-reborn'
     gem 'jekyll'
@@ -21,6 +21,7 @@ group :jekyll_plugins do
     gem 'terser'
     gem 'unicode_utils'
     gem 'webrick'
+    gem 'jekyll-polyglot'
 end
 group :other_plugins do
     gem 'css_parser'

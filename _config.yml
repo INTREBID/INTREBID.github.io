@@ -23,6 +23,12 @@ last_updated: false # set to true if you want to display last updated in the foo
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
 
+lang: Language #zh # the language of your site (for example: en, fr, cn, ru, etc.)
+languages: ["en", "zh"]
+default_lang: "zh"
+exclude_from_localization: ["javascript", "images", "css", "public"]
+parallel_localization: true
+
 # -----------------------------------------------------------------------------
 # Theme
 # -----------------------------------------------------------------------------

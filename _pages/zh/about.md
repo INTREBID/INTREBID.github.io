@@ -1,8 +1,9 @@
 ---
 layout: about
-title: Home
 permalink: /
-subtitle: INTREBID
+title: Home
+lang: zh
+subtitle: <b>智能信息与大数据</b>实验室
 
 profile:
   align: right
@@ -16,7 +17,7 @@ social: false # includes social icons at the bottom of the page
 ---
 
 <p></p>
-Write something here......
+写点东西......
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

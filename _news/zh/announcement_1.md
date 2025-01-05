@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Test - A long announcement with details
+title: 测试 - 带正文的消息
 date: 2015-11-07 16:11:00-0400
 inline: false
 related_posts: false
+lang: zh
 ---
 
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
+公告和新闻可以比快速内联帖子长得多。事实上，它们可以拥有标准博客文章的所有功能。见下文
 
 ---
 

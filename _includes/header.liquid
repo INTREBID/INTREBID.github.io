@@ -120,6 +120,7 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">
@@ -128,6 +129,7 @@
               </button>
             </li>
           {% endif %}
+
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">
@@ -137,6 +139,25 @@
               </button>
             </li>
           {% endif %}
+
+          <li class="nav-item">
+            <a onclick="cycleLanguage(event)" class="nav-link" style="cursor: pointer;" title="Change language">
+              <i class="fa-solid fa-language" style="font-size: 1.4em;"></i>
+            </a>
+            <script>
+              function cycleLanguage(event) {
+                event.preventDefault();
+                const languages = {{ site.languages | jsonify }};
+                const currentLang = '{{ site.active_lang }}';
+                const nextLang = languages[(languages.indexOf(currentLang) + 1) % languages.length];
+                const basePath = '{{ site.baseurl }}';
+                window.location.href = nextLang === '{{ site.default_lang }}'
+                  ? basePath + '{{ page.url }}'
+                  : basePath + '/' + nextLang + '{{ page.url }}';
+              }
+            </script>
+          </li>
+
         </ul>
       </div>
     </div>
