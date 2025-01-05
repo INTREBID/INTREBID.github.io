@@ -1,0 +1,31 @@
+⚠️ 匹配到但缺少PDF的条目:
+
+- Title: BT-Tree: {A} Reinforcement Learning Based Index for Big Trajectory
+Data
+  ID: DBLP:journals/pacmmod/GuFYCLZ24
+
+- Title: Multimodal Pretraining, Adaptation, and Generation for Recommendation:
+{A} Survey
+  ID: DBLP:conf/kdd/LiuZYDD0ZZD24
+
+- Title: Debiasing Sequential Recommenders through Distributionally Robust
+Optimization over System Exposure
+  ID: DBLP:conf/wsdm/YangDWRCCMZR024
+
+- Title: User Behavior Enriched Temporal Knowledge Graphs for Sequential Recommendation
+  ID: DBLP:conf/wsdm/HuGLLTZK24
+
+- Title: IncMSR: An Incremental Learning Approach for Multi-Scenario Recommendation
+  ID: DBLP:conf/wsdm/ZhangWLTZ24
+✅
+
+- Title: Multi-sourced Integrated Ranking with Exposure Fairness
+  ID: DBLP:conf/pakdd/LiuLXZZDWTZY24
+
+- Title: A benchmark and comprehensive survey on knowledge graph entity alignment
+via representation learning
+  ID: DBLP:journals/vldb/ZhangTLJQ22
+
+- Title: DuoWave: Mitigating the curse of dimensionality for uncertain data
+  ID: DBLP:journals/dke/MaZLC12
+
