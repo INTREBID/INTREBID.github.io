@@ -3,29 +3,29 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-home",
-    title: "Home",
+    id: "nav-首页",
+    title: "首页",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-news",
-          title: "News",
-          description: "动态",
+  },{id: "nav-动态",
+          title: "动态",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/news/";
           },
-        },{id: "nav-publications",
-          title: "Publications",
-          description: "按照出版时间排列的期刊、会议论文",
+        },{id: "nav-论文",
+          title: "论文",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/pubs/";
           },
-        },{id: "nav-awards",
-          title: "Awards",
-          description: "获奖情况",
+        },{id: "nav-获奖",
+          title: "获奖",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/awards/";
