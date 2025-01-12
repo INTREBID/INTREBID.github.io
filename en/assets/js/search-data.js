@@ -23,34 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/pubs/";
           },
-        },{id: "nav-projects",
-          title: "Projects",
-          description: "A growing collection of your cool projects.",
+        },{id: "nav-awards",
+          title: "Awards",
+          description: "Awards and Honors",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/projects/";
+            window.location.href = "/awards/";
           },
-        },{id: "nav-teaching",
-          title: "Teaching",
-          description: "Materials for courses you taught. Replace this text with your description.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/teaching/";
-          },
-        },{id: "nav-people",
-          title: "People",
-          description: "members of the lab or group",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/people/";
-          },
-        },{id: "news-test-a-long-announcement-with-details",
-          title: 'Test - A long announcement with details',
+        },{id: "news-our-paper-has-been-accepted-by-sigmod-2025-tu-gu-kaiyu-feng-jingyi-yang-gao-cong-cheng-long-rui-zhang-bt-tree-a-reinforcement-learning-based-index-for-big-trajectory-data-acm-sigmod-conference-2025",
+          title: 'Our paper has been accepted by SIGMOD 2025. Tu Gu, Kaiyu Feng, Jingyi...',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_1/";
-            },},{id: "news-welcome-to-the-laboratory-of-intelligent-information-retrieval-and-big-data-also-known-as-intrebid-at-huazhong-university-of-science-and-technology-sparkles-smile",
-          title: 'Welcome to the laboratory of INTelligent information REtrieval and BIg Data, also known...',
+          section: "News",},{id: "news-our-paper-has-been-accepted-by-aaai-2025-guanghao-meng-sunan-he-jinpeng-wang-tao-dai-letian-zhang-jieming-zhu-qing-li-gang-wang-rui-zhang-yong-jiang-evdclip-improving-vision-language-retrieval-with-entity-visual-descriptions-from-large-language-models-aaai-2025",
+          title: 'Our paper has been accepted by AAAI 2025. Guanghao Meng, Sunan He, Jinpeng...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',

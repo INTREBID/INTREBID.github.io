@@ -23,34 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/pubs/";
           },
-        },{id: "nav-projects",
-          title: "Projects",
-          description: "一些不错的项目",
+        },{id: "nav-awards",
+          title: "Awards",
+          description: "获奖情况",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/projects/";
+            window.location.href = "/awards/";
           },
-        },{id: "nav-teaching",
-          title: "Teaching",
-          description: "您授课所用的教材。请用您的描述替换此文本",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/teaching/";
-          },
-        },{id: "nav-people",
-          title: "People",
-          description: "实验室成员",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/people/";
-          },
-        },{id: "news-测试-带正文的消息",
-          title: '测试 - 带正文的消息',
+        },{id: "news-论文被sigmod-2025接收-tu-gu-kaiyu-feng-jingyi-yang-gao-cong-cheng-long-rui-zhang-bt-tree-a-reinforcement-learning-based-index-for-big-trajectory-data-acm-sigmod-conference-2025",
+          title: '论文被SIGMOD 2025接收. Tu Gu, Kaiyu Feng, Jingyi Yang, Gao Cong, Cheng Long, Rui...',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_1/";
-            },},{id: "news-欢迎来到华中科技大学智能信息与大数据-intrebid-实验室-sparkles-smile",
-          title: '欢迎来到华中科技大学智能信息与大数据(INTREBID)实验室. :sparkles: :smile:',
+          section: "News",},{id: "news-论文被aaai-2025接收-guanghao-meng-sunan-he-jinpeng-wang-tao-dai-letian-zhang-jieming-zhu-qing-li-gang-wang-rui-zhang-yong-jiang-evdclip-improving-vision-language-retrieval-with-entity-visual-descriptions-from-large-language-models-aaai-2025",
+          title: '论文被AAAI 2025接收. Guanghao Meng, Sunan He, Jinpeng Wang, Tao Dai, Letian Zhang, Jieming...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
