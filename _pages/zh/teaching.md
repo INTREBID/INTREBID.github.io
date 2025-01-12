@@ -4,7 +4,7 @@ permalink: /teaching/
 title: Teaching
 lang: zh
 description: 您授课所用的教材。请用您的描述替换此文本
-nav: true
+nav: false
 nav_order: 6
 ---
 

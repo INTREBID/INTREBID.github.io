@@ -1,10 +1,9 @@
 ---
 layout: post
-date: 2024-12-25 15:59:00-0400
+date: 2024-12-10 00:00:00-0000
 inline: true
 related_posts: false
 lang: zh
 ---
 
-
-欢迎来到华中科技大学<b>智能信息与大数据</b>(<b>INTREBID</b>)实验室. :sparkles: :smile:
+论文被AAAI 2025接收. Guanghao Meng, Sunan He, Jinpeng Wang, Tao Dai, Letian Zhang, Jieming Zhu, Qing Li, Gang Wang, Rui Zhang, Yong Jiang, EvdCLIP: Improving Vision-Language Retrieval with Entity Visual Descriptions from Large Language Models, AAAI 2025.

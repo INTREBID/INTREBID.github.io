@@ -1,10 +1,9 @@
 ---
 layout: post
-date: 2024-12-25 15:59:00-0400
+date: 2024-12-10 00:00:00-0000
 inline: true
 related_posts: false
 lang: en
 ---
 
-
-Welcome to the laboratory of <b>INTelligent information REtrieval and BIg Data</b>, also known as <b>INTREBID</b>, at Huazhong University of Science and Technology. :sparkles: :smile:
+Our paper has been accepted by AAAI 2025. Guanghao Meng, Sunan He, Jinpeng Wang, Tao Dai, Letian Zhang, Jieming Zhu, Qing Li, Gang Wang, Rui Zhang, Yong Jiang, EvdCLIP: Improving Vision-Language Retrieval with Entity Visual Descriptions from Large Language Models, AAAI 2025.

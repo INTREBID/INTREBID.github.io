@@ -1,0 +1,25 @@
+.award-item {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.award-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.award-title {
+  margin: 0 0 0.5rem 0;
+  color: var(--global-theme-color);
+}
+
+.award-date {
+  color: var(--global-text-color-light);
+  margin-bottom: 0.5rem;
+}
+
+.award-description {
+  margin-bottom: 0;
+}

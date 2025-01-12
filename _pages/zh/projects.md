@@ -4,7 +4,7 @@ permalink: /projects/
 title: Projects
 lang: zh
 description: 一些不错的项目
-nav: true
+nav: false
 nav_order: 4
 display_categories: [work, fun]
 horizontal: false

@@ -1,0 +1,39 @@
+{% assign awards_count = site.data.awards | size %}
+{% assign max_show = 3 %}
+{% assign show_more = false %}
+{% if awards_count > max_show %}
+  {% assign show_more = true %}
+{% endif %}
+
+<div class="awards">
+  {% for award in site.data.awards limit:max_show %}
+    <div class="award-item">
+      <div class="row">
+        <div class="col-sm-2">
+          {% if award.image %}
+            <img src="{{ award.image | relative_url }}" alt="{{ award.title[site.active_lang] }}" class="award-image img-fluid">
+          {% else %}
+            <img src="/assets/img/blank.png" alt="" class="award-image img-fluid">
+          {% endif %}
+        </div>
+        <div class="col-sm-10">
+          <h3 class="award-title">{{ award.title[site.active_lang] }}</h3>
+          <p class="award-date">{{ award.date }}</p>
+          {% if award.description[site.active_lang] %}
+            <p class="award-description">{{ award.description[site.active_lang] }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+
+  {% if show_more %}
+    <div class="text-center">
+      {% if site.active_lang == 'en' %}
+        <a href="{{ '/awards/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">SEE MORE</a>
+      {% else %}
+        <a href="{{ '/awards/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">查看更多获奖情况</a>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>

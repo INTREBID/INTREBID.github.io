@@ -277,6 +277,13 @@ This template has a built-in light/dark mode. It detects the user preferred colo
 <img src="readme_preview/dark.png" width=400>
 </p>
 
+### Language Switch
+
+This template supports language switch. You can switch the language by clicking the language icon in the top right corner of the page.
+
+repository: https://github.com/untra/polyglot
+
+
 ---
 
 ### CV

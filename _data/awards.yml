@@ -1,0 +1,35 @@
+- title:
+    zh: "WSDM 2024最佳论文提名奖"
+    en: "WSDM 2024 Best Paper Nomination Award"
+  date: 2024
+  description:
+    zh: "信息检索领域顶级会议"
+    en: "Top conference in information retrieval"
+  image: "/assets/img/awards/WSDM2024-bestpapernomination.png"
+
+- title:
+    zh: "谷歌学者奖 2017"
+    en: "Google Faculty Research Awards 2017"
+  date: 2017
+  description:
+    zh: "结构数据管理领域全球仅三位，另两位斯坦福大学（QS 5）和哥伦比亚大学（QS 23）"
+    en: "In the field of structured data management, there are only three experts globally, with the other two hailing from Stanford University (QS 5) and Columbia University (QS 23)."
+  image: "/assets/img/awards/GoogleFacultyResearchAwards2017.jpg"
+
+- title:
+    zh: "SIGKDD 2016最佳论文奖"
+    en: "SIGKDD 2016 Best Paper Award"
+  date: 2016
+  description:
+    zh: "数据挖掘领域旗舰会议, 1100余篇投稿中仅4篇获得最佳论文奖"
+    en: "The flagship conference in data mining, only 4 out of 1100 submissions received the best paper award"
+  image: "/assets/img/awards/SIGKDD2016-bestpaper.png"
+
+- title:
+    zh: "大洋洲计算机科研杰出贡献奖"
+    en: "Chris Wallace Award"
+  date: 2015
+  description:
+    zh: "每年在大洋洲仅1位获奖者"
+    en: "Chris Wallace Award for Outstanding Research by the Computing Research and Education Association of Australasia (CORE). Only one awardee in Oceania each year"
+  link: https://www.core.edu.au/the-chris-wallace-award-for-outstanding-research-contributio

@@ -2,17 +2,18 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: INTelligent information REtrieval and BIg Data # the website title (if blank, full name will be used instead)
-short_title: INTREBID LAB # short title for the site (displayed in the navbar)
+title:
+  en: INTelligent information REtrieval and BIg Data # English title
+  zh: 智能信息与大数据实验室 # Chinese title
+short_title:
+  en: INTREBID LAB # English short title
+  zh: 智能信息与大数据实验室 # Chinese short title
 first_name: INTREBID
 middle_name:
 last_name: LAB
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-footer_text: >
-  <!-- Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. -->
+contact_note: intrebid@hust.edu.cn
+description:
+footer_text:
 keywords: academic-website, INTREBID, hust # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 languages: ["en", "zh"]
@@ -20,7 +21,6 @@ default_lang: "zh"
 exclude_from_localization: ["javascript", "images", "css", "public"]
 parallel_localization: true
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
-
 
 url: https://intrebid.github.io/ # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root

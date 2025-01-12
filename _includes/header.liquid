@@ -3,7 +3,7 @@
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
         <a class="navbar-brand title font-weight-lighter" href=" " style="color: white !important">
-          {% if site.title == 'blank' %}
+          {% if site.title[site.active_lang] == 'blank' %}
             {% if site.first_name %}
               <span class="font-weight-bold">
                 {{- site.first_name -}}
@@ -16,10 +16,10 @@
               {{- site.last_name -}}
             {% endif %}
           {% else %}
-            {% if site.short_title %}
-              {{- site.short_title -}}
+            {% if site.short_title[site.active_lang] %}
+              {{- site.short_title[site.active_lang] -}}
             {% else %}
-              {{- site.title -}}
+              {{- site.title[site.active_lang] -}}
             {% endif %}
           {% endif %}
         </a >

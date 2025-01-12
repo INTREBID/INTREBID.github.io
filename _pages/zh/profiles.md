@@ -4,7 +4,7 @@ permalink: /people/
 title: People
 lang: zh
 description: 实验室成员
-nav: true
+nav: false
 nav_order: 7
 
 profiles:

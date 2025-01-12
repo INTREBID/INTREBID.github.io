@@ -2,16 +2,17 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
+  <header class="post-header" style="text-align: center;">
+    <p class="desc">{{ page.subtitle }}</p>
+    <h1 class="post-title" style="font-size: 3em; margin-bottom: 0.8rem;">
+      {% if site.title[site.active_lang] == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
         {{ site.last_name }}
       {% else %}
-        {{ site.title }}
+        {{ site.title[site.active_lang] }}
       {% endif %}
     </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+
   </header>
 
   <article>
@@ -76,6 +77,16 @@ layout: default
         <div class="contact-icons">{% include social.liquid %}</div>
 
         <div class="contact-note">{{ site.contact_note }}</div>
+      </div>
+    {% endif %}
+
+    <!-- Awards Section -->
+    {% if page.awards %}
+      <div class="awards">
+        <h2>
+          <div class="line"><a href="{{ '/awards/' | relative_url }}">Awards</a></div>
+        </h2>
+        {% include selected_awards.html %}
       </div>
     {% endif %}
 

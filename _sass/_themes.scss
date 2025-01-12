@@ -20,7 +20,7 @@
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0, 0, 0, 0.1);
   --global-card-bg-color: #{$white-color};
-  --global-highlight-color: #{$red-color-dark};
+  --global-highlight-color: #{$red-color};
   --global-abbr-pdf-color: #{$red-color-light};
   --global-abbr-bib-color: #{$blue-color-light};
   --global-abbr-code-color: #{$green-color-light};
@@ -99,6 +99,7 @@ html[data-theme="dark"] {
   --global-distill-app-color: #{$grey-color-light};
   --global-divider-color: #424246;
   --global-card-bg-color: #{$grey-900};
+  --global-highlight-color: #{$red-color-light};
   --global-abbr-pdf-color: #{$red-color-dark};
   --global-abbr-bib-color: #{$blue-color-dark};
   --global-abbr-code-color: #{$green-color-dark};
