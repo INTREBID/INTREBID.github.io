@@ -1,9 +1,9 @@
 ---
 layout: page
 permalink: /news/
-title: News
+title: 动态
 lang: zh
-description: 动态
+description:
 nav: true
 nav_order: 2
 ---

@@ -3,7 +3,7 @@ layout: page
 permalink: /teaching/
 title: Teaching
 lang: en
-description: Materials for courses you taught. Replace this text with your description.
+description:
 nav: false
 nav_order: 6
 ---

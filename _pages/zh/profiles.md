@@ -1,9 +1,9 @@
 ---
 layout: profiles
 permalink: /people/
-title: People
+title: 成员
 lang: zh
-description: 实验室成员
+description:
 nav: false
 nav_order: 7
 

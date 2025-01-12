@@ -1,9 +1,9 @@
 ---
 layout: page
 permalink: /awards/
-title: Awards
+title: 获奖
 lang: zh
-description: 获奖情况
+description:
 nav: true
 nav_order: 8
 ---

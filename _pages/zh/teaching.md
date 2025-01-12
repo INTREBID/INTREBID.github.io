@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: Teaching
+title:
 lang: zh
 description: 您授课所用的教材。请用您的描述替换此文本
 nav: false

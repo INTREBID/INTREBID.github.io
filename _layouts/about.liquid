@@ -4,7 +4,7 @@ layout: default
 <div class="post">
   <header class="post-header" style="text-align: center;">
     <p class="desc">{{ page.subtitle }}</p>
-    <h1 class="post-title" style="font-size: 3em; margin-bottom: 0.8rem;">
+    <h1 class="post-title" style="font-size: 3em;">
       {% if site.title[site.active_lang] == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
         {{ site.last_name }}
@@ -45,7 +45,7 @@ layout: default
     {% if page.news and site.announcements.enabled %}
       <h2>
         <div class="line">
-          <a href="{{ '/news/' | relative_url }}">News</a>
+          <a href="{{ '/news/' | relative_url }}">{{ site.data.setting_display.about.news[site.active_lang] }}</a>
         </div>
       </h2>
       {% include news.liquid limit=true %}
@@ -65,7 +65,7 @@ layout: default
     {% if page.selected_papers %}
       <h2>
         <div class="line">
-          <a href="{{ '/publications/' | relative_url }}">Selected Pubs.</a>
+          <a href="{{ '/pubs/' | relative_url }}">{{ site.data.setting_display.about.selected_papers[site.active_lang] }}</a>
         </div>
       </h2>
       {% include selected_papers.liquid %}
@@ -84,7 +84,7 @@ layout: default
     {% if page.awards %}
       <div class="awards">
         <h2>
-          <div class="line"><a href="{{ '/awards/' | relative_url }}">Awards</a></div>
+          <div class="line"><a href="{{ '/awards/' | relative_url }}">{{ site.data.setting_display.about.awards[site.active_lang] }}</a></div>
         </h2>
         {% include selected_awards.html %}
       </div>

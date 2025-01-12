@@ -1492,10 +1492,13 @@ ninja-keys::part(ninja-input-wrapper) {
 
 .desc {
   margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   font-size: 1.5rem;
 
   @media (min-width: 768px) {
-    margin-left: auto;  // 电脑端偏左
-    margin-right: 46%;
+    margin-left: auto;
+    margin-right: 52%;
+    white-space: nowrap;
   }
 }

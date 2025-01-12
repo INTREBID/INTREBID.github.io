@@ -1,0 +1,15 @@
+about:
+  news:
+    en: News
+    zh: 动态
+  selected_papers:
+    en: Recent Pubs.
+    zh: 最新论文
+  awards:
+    en: Awards
+    zh: 获奖
+
+awards:
+  see_more:
+    en: SEE MORE
+    zh: 查看更多获奖情况

@@ -29,11 +29,7 @@
 
   {% if show_more %}
     <div class="text-center">
-      {% if site.active_lang == 'en' %}
-        <a href="{{ '/awards/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">SEE MORE</a>
-      {% else %}
-        <a href="{{ '/awards/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">查看更多获奖情况</a>
-      {% endif %}
+      <a href="{{ '/awards/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">{{ site.data.setting_display.awards.see_more[site.active_lang] }}</a>
     </div>
   {% endif %}
 </div>

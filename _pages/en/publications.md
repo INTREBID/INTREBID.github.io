@@ -3,7 +3,7 @@ layout: page
 permalink: /pubs/
 title: Publications
 lang: en
-description: publications by categories in reversed chronological order.
+description:
 nav: true
 nav_order: 3
 ---

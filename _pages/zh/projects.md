@@ -1,9 +1,9 @@
 ---
 layout: page
 permalink: /projects/
-title: Projects
+title: 项目
 lang: zh
-description: 一些不错的项目
+description:
 nav: false
 nav_order: 4
 display_categories: [work, fun]

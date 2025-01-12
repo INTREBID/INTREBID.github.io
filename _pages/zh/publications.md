@@ -1,9 +1,9 @@
 ---
 layout: page
 permalink: /pubs/
-title: Publications
+title: 论文
 lang: zh
-description: 按照出版时间排列的期刊、会议论文
+description:
 nav: true
 nav_order: 3
 ---
